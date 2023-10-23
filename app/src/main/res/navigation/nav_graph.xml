@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/pokedex_fragment">
+
+    <fragment
+        android:id="@+id/pokedex_fragment"
+        android:name="com.dungnguyen.pokedex.presentation.PokedexFragment"
+        android:label="PokedexFragment" />
+    <fragment
+        android:id="@+id/berries_fragment"
+        android:name="com.dungnguyen.berries.presentation.BerriesFragment"
+        android:label="BerriesFragment" />
+    <fragment
+        android:id="@+id/generations_fragment"
+        android:name="com.dungnguyen.generations.presentation.GenerationsFragment"
+        android:label="GenerationsFragment" />
+    <fragment
+        android:id="@+id/items_fragment"
+        android:name="com.dungnguyen.items.presentation.ItemsFragment"
+        android:label="ItemsFragment" />
+    <fragment
+        android:id="@+id/locations_fragment"
+        android:name="com.dungnguyen.locations.presentation.LocationsFragment"
+        android:label="LocationsFragment" />
+    <fragment
+        android:id="@+id/machines_fragment"
+        android:name="com.dungnguyen.machines.presentation.MachinesFragment"
+        android:label="MachinesFragment" />
+    <fragment
+        android:id="@+id/moves_fragment"
+        android:name="com.dungnguyen.moves.presentation.MovesFragment"
+        android:label="MovesFragment" />
+</navigation>

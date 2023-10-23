@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_pokedex"
+        android:title="@string/pokedex" />
+    <item
+        android:id="@+id/nav_generations"
+        android:title="@string/generations" />
+    <item
+        android:id="@+id/nav_moves"
+        android:title="@string/moves" />
+    <item
+        android:id="@+id/nav_machines"
+        android:title="@string/machines" />
+    <item
+        android:id="@+id/nav_items"
+        android:title="@string/items" />
+    <item
+        android:id="@+id/nav_berries"
+        android:title="@string/berries" />
+    <item
+        android:id="@+id/nav_locations"
+        android:title="@string/locations" />
+</menu>
