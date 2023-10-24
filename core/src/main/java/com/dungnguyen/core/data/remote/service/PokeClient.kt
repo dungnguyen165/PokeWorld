@@ -2,6 +2,7 @@ package com.dungnguyen.core.data.remote.service
 
 import com.dungnguyen.core.data.remote.ApiParameter
 import com.dungnguyen.core.data.remote.models.pokemon.ApiPaginatedData
+import com.dungnguyen.core.data.remote.models.pokemon.detail.ApiPokemon
 
 class PokeClient(val pokeApi: PokeApi) {
 
@@ -14,9 +15,9 @@ class PokeClient(val pokeApi: PokeApi) {
             limit = limit
         )
 
-    suspend fun getPokemonDetailById(id: String): ApiPokemonDetail =
+    suspend fun getPokemonDetailById(id: String): ApiPokemon =
         pokeApi.getPokemonDetailById(id)
 
-    suspend fun getPokemonDetailByName(name: String): ApiPokemonDetail =
+    suspend fun getPokemonDetailByName(name: String): ApiPokemon =
         pokeApi.getPokemonDetailByName(name)
 }

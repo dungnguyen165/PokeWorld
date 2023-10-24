@@ -7,7 +7,7 @@ interface PokemonRepository {
 
     fun getPokemonList(): Flow<List<Pokemon>>
 
-    suspend fun getMorePokemon(page: Int, limit: Int): PaginatedPokemon
+    suspend fun getMorePokemon(page: Int, limit: Int): List<Pokemon>
 
     suspend fun storePokemon(pokemon: List<Pokemon>)
 
