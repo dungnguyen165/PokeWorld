@@ -41,7 +41,8 @@ android {
 
 dependencies {
 
-    // Features
+    // Modules
+    implementation(project(":logger"))
     implementation(project(":features:pokedex"))
     implementation(project(":features:generations"))
     implementation(project(":features:moves"))
@@ -67,4 +68,6 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.4")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.4")
 
+    // DI
+    implementation("com.google.dagger:hilt-android:2.48.1")
 }
