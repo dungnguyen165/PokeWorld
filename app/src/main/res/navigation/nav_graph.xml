@@ -1,35 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/pokedex_fragment">
+    app:startDestination="@id/nav_pokedex">
 
     <fragment
-        android:id="@+id/pokedex_fragment"
+        android:id="@+id/nav_pokedex"
         android:name="com.dungnguyen.pokedex.presentation.PokedexFragment"
-        android:label="PokedexFragment" />
+        android:label="Pokedex"
+        tools:layout="@layout/fragment_pokedex" />
+
     <fragment
-        android:id="@+id/berries_fragment"
+        android:id="@+id/nav_berries"
         android:name="com.dungnguyen.berries.presentation.BerriesFragment"
-        android:label="BerriesFragment" />
+        android:label="Berries"
+        tools:layout="@layout/fragment_berries" />
+
     <fragment
-        android:id="@+id/generations_fragment"
+        android:id="@+id/nav_generations"
         android:name="com.dungnguyen.generations.presentation.GenerationsFragment"
-        android:label="GenerationsFragment" />
+        android:label="Generations"
+        tools:layout="@layout/fragment_generations" />
+
     <fragment
-        android:id="@+id/items_fragment"
+        android:id="@+id/nav_items"
         android:name="com.dungnguyen.items.presentation.ItemsFragment"
-        android:label="ItemsFragment" />
+        android:label="Items"
+        tools:layout="@layout/fragment_items"/>
+
     <fragment
-        android:id="@+id/locations_fragment"
+        android:id="@+id/nav_locations"
         android:name="com.dungnguyen.locations.presentation.LocationsFragment"
-        android:label="LocationsFragment" />
+        android:label="Locations"
+        tools:layout="@layout/fragment_locations"/>
+
     <fragment
-        android:id="@+id/machines_fragment"
+        android:id="@+id/nav_machines"
         android:name="com.dungnguyen.machines.presentation.MachinesFragment"
-        android:label="MachinesFragment" />
+        android:label="Machines"
+        tools:layout="@layout/fragment_machines"/>
+
     <fragment
-        android:id="@+id/moves_fragment"
+        android:id="@+id/nav_moves"
         android:name="com.dungnguyen.moves.presentation.MovesFragment"
-        android:label="MovesFragment" />
+        android:label="Moves"
+        tools:layout="@layout/fragment_moves"/>
+
 </navigation>
